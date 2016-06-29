@@ -17,6 +17,10 @@ deleteData();
     </head>
 
     <body>
+       <div class="starter-template">
+        <h1 class = "text-center">DELETE</h1>
+      </div>
+
         <div class="container">
             <div class="col-xs-6">
                 <form action="login_delete.php" method="post">                

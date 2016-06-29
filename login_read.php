@@ -1,10 +1,5 @@
 <?php
     include "db.php";
-    $connection = mysqli_connect('localhost','root','','loginapp');
-    if($connection){
-        echo "Connected to DB.";
-    }
-    
     $query = "SELECT * FROM users";
     $result = mysqli_query($connection,$query);
     if(!$result){
@@ -27,6 +22,9 @@
     </head>
 
     <body>
+       <div class="starter-template">
+        <h1 class = "text-center">READ</h1>
+      </div>
         <div class="container">
             <div class="col-xs-6">
                 <?php

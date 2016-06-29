@@ -17,8 +17,11 @@ updateData();
     </head>
 
     <body>
+       <div class="starter-template">
+        <h1 class = "text-center">UPDATE</h1>
+      </div>
         <div class="container">
-            <div class="col-xs-6">
+            <div class="col-sm-6">
                 <form action="login_update.php" method="post">
                     <div class="form-group">
                         <label for="username">Username</label>
