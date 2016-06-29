@@ -42,5 +42,20 @@
         }
         }
     }
+    
+    function deleteData(){
+        if(isset($_POST['submit'])){
+            global $connection;
+            $id = $_POST['id'];
+            $query = "DELETE FROM users where id = $id";
+            $result = mysqli_query($connection,$query);
+        if(!$result){
+            die('QUERY FAILED.'.mysqli_error($connection));
+        }
+        }
+    }
+    
+    
+    
 
 ?>
